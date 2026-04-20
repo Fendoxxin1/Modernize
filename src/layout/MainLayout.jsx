@@ -7,10 +7,13 @@ const MainLayout = () => {
     return (
         <>
             <Header />
-            <Sidebar />
-            <main>
-                <Outlet />
-            </main>
+
+            <div className="flex">
+                <Sidebar />
+                <main className="bg-[#f5f6fa]  flex-1">
+                    <Outlet />
+                </main>
+            </div>
         </>
     );
 };

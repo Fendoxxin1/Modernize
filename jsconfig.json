@@ -1,0 +1,10 @@
+// {
+//     "compilerOptions": {
+//         "module": "esnext",
+//         "target": "es6",
+//         "jsx": "preserve",
+//         "checkJs": true,
+//         "baseUrl": "./src"
+//     },
+//     "exclude": ["node_modules"]
+// }

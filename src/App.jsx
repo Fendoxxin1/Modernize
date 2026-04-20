@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./pages/dashboard/Dashboard";
 import MainLayout from "./layout/MainLayout";
+import Products from "./pages/products/Products";
+import Catogories from "./pages/categories/Catogories";
 
 const App = () => {
     const router = createBrowserRouter([
@@ -13,12 +15,12 @@ const App = () => {
                     element: <Dashboard />,
                 },
                 {
-                    path: "/dashboard",
-                    element: <Dashboard />,
+                    path: "/products",
+                    element: <Products />,
                 },
                 {
-                    path: "/products",
-                    element: <Dashboard />,
+                    path: "/categories",
+                    element: <Catogories />,
                 },
             ],
         },
