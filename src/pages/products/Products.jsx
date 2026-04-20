@@ -7,7 +7,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 const Products = () => {
     const BaseURL = "http://localhost:3000/products";
     const [data, setData] = useState(null);
-    const [addProduct, setAddProduct] = useState(true);
+    const [addProduct, setAddProduct] = useState(false);
 
     const prodname = useRef();
     const desc = useRef();
