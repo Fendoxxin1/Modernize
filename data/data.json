@@ -17,6 +17,99 @@
       "price": "50",
       "discountPrice": "45",
       "category": "Women"
+    },
+    {
+      "id": "c3b7",
+      "producName": "winter sweater",
+      "desc": "good quality premium ",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX38LqcKkd0IZIGCsBVLXF_Kt22n6ibwCqog&s",
+      "price": "120",
+      "discountPrice": "100",
+      "category": "Men"
+    },
+    {
+      "id": "0b34",
+      "producName": "sweater",
+      "desc": "good quality",
+      "imgURL": "https://hips.hearstapps.com/hmg-prod/images/gettyimages-2175768653-6722956db6e7f.png?crop=0.5xw:1xh;center,top&resize=640:*",
+      "price": "400",
+      "discountPrice": "380",
+      "category": "Women"
+    },
+    {
+      "id": "f3e0",
+      "producName": "something",
+      "desc": "dsf",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX38LqcKkd0IZIGCsBVLXF_Kt22n6ibwCqog&s",
+      "price": "400",
+      "discountPrice": "400",
+      "category": "Men"
+    },
+    {
+      "id": "7528",
+      "producName": "something",
+      "desc": "sdf",
+      "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX38LqcKkd0IZIGCsBVLXF_Kt22n6ibwCqog&s",
+      "price": "120",
+      "discountPrice": "120",
+      "category": "T-Shirt"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "categName": "Mens clothes",
+      "categoryImg": "https://t3.ftcdn.net/jpg/04/98/23/20/360_F_498232089_URwiN5rQsnKart0R37OHMvBZAYlvbLRI.jpg"
+    },
+    {
+      "id": "1",
+      "categName": "Mens clothes",
+      "categoryImg": "https://t3.ftcdn.net/jpg/04/98/23/20/360_F_498232089_URwiN5rQsnKart0R37OHMvBZAYlvbLRI.jpg"
+    },
+    {
+      "id": "1",
+      "categName": "Mens clothes",
+      "categoryImg": "https://t3.ftcdn.net/jpg/04/98/23/20/360_F_498232089_URwiN5rQsnKart0R37OHMvBZAYlvbLRI.jpg"
+    },
+    {
+      "id": "1",
+      "categName": "Mens clothes",
+      "categoryImg": "https://t3.ftcdn.net/jpg/04/98/23/20/360_F_498232089_URwiN5rQsnKart0R37OHMvBZAYlvbLRI.jpg"
+    },
+    {
+      "id": "a50c",
+      "categName": "fdsdf",
+      "categoryImg": "sfdsfd"
+    },
+    {
+      "id": "9982",
+      "categName": "sdfsdf",
+      "categoryImg": "sdsdf"
+    },
+    {
+      "id": "eab4",
+      "categName": "Woman clothes",
+      "categoryImg": "https://m.media-amazon.com/images/I/61jYaoKvuC_UY1000_.jpg"
+    },
+    {
+      "id": "0fcf",
+      "categName": "sdf",
+      "categoryImg": "fsd"
+    },
+    {
+      "id": "d570",
+      "categName": "ffff",
+      "categoryImg": ""
+    },
+    {
+      "id": "acc7",
+      "categName": "fffff",
+      "categoryImg": "ff"
+    },
+    {
+      "id": "59ff",
+      "categName": "stttrtr",
+      "categoryImg": "ttrtrdtrd"
     }
   ]
 }
