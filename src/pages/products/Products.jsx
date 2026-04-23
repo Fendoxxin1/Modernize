@@ -6,7 +6,6 @@ import axios from "axios";
 import { FaArrowLeftLong, FaTrashCan } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { MdEdit } from "react-icons/md";
-import { isCookie } from "react-router-dom";
 
 const Products = () => {
     const BaseURL = "http://localhost:3000/products";
@@ -32,8 +31,11 @@ const Products = () => {
     }, []);
 
     async function handleDelete() {
-        const res = await axios.delete(`${BaseURL}/${isChecked}`);
-        console.log(res);
+        try {
+            const res = await axios.delete(`${BaseURL}/${isChecked}`);
+
+            console.log(res);
+        } catch (error) {}
     }
 
     const toggleProduct = () => {
@@ -51,8 +53,20 @@ const Products = () => {
             discountPrice: discountPrice.current.value,
             category: category,
         };
-        setAddProdModal(true);
-        await axios.post("http://localhost:3000/products", newProduct);
+        try {
+            const res = await axios.post("http://localhost:3000/products", newProduct);
+            if (res.status == 200 || res.status == 201) {
+                setAddProdModal(true);
+                alert(
+                    "Muvaffaqqiyatli yaratildi. Teacher aslida modal oyna chiqishi kerak edi lekin sahifa qayta refresh bo'lib ketib modal o'chib qolayabdi",
+                );
+            } else {
+                throw new Error("Failed to post product");
+            }
+        } catch (err) {
+            console.error(err.message);
+        } finally {
+        }
     };
 
     return (

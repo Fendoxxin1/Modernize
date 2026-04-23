@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import CategoryCart from "../../components/ui/CategoryCart";
+import nullCateg from "../../assets/nullCateg.png";
+
 import axios from "axios";
 import { IoMdClose } from "react-icons/io";
 
@@ -34,15 +36,32 @@ const Catogories = () => {
 
     return (
         <div className="p-8 w-full h-fit  rounded-2xl shadow-sm border border-gray-100">
-            <div className="flex justify-between items-center mb-8">
-                <h1 className="font-bold text-2xl text-gray-800 mb-8">Categories</h1>
-                <button
-                    onClick={() => setIsModalOpen(true)}
-                    className="bg-[#1E5EFF] text-white rounded-lg px-6 py-2.5 font-medium hover:bg-blue-700 transition-colors"
-                >
-                    + Add Category
-                </button>
-            </div>
+            {data.length ? (
+                <div className="flex justify-between items-center mb-8">
+                    <h1 className="font-bold text-2xl text-gray-800 mb-8">Categories</h1>
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="bg-[#1E5EFF] text-white rounded-lg px-6 py-2.5 font-medium hover:bg-blue-700 transition-colors"
+                    >
+                        + Add Category
+                    </button>
+                </div>
+            ) : (
+                <div className="w-full flex justify-center flex-col items-center gap-6 p-50">
+                    <img src={nullCateg} alt="" width={99} />
+                    <h3>Create First Category</h3>
+                    <p className="text-[#5A607F]  text-center">
+                        Organize all your items in stock by creating and adding them to categories. <br /> Categories
+                        helps to find items faster for your customers.
+                    </p>
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="bg-[#1E5EFF] text-white rounded-lg px-6 py-2.5 font-medium hover:bg-blue-700 transition-colors"
+                    >
+                        + Add Category
+                    </button>
+                </div>
+            )}
 
             {isModalOpen && (
                 <div
@@ -96,7 +115,7 @@ const Catogories = () => {
             {/* //? Cart */}
             <div className="flex gap-8 flex-wrap ">
                 {data.map((items) => (
-                    <CategoryCart key={items} img={items.categoryImg} title={items.categName} stock={"24"} />
+                    <CategoryCart key={items.id} img={items.categoryImg} title={items.categName} stock={"24"} />
                 ))}
             </div>
         </div>
