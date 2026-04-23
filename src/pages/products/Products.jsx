@@ -25,6 +25,7 @@ const Products = () => {
     useEffect(() => {
         async function getData() {
             const res = await axios.get(BaseURL);
+            if (res.status !== 201 || res.status !== 200) alert("Serverga so'rov jo'natib bo'lmadi. Json-serverni ishga tushuring");
             setData(res.data);
         }
         getData();
